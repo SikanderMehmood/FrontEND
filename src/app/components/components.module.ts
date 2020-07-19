@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { ComponentsComponent } from './components.component';
 import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalBasic } from './modal/modal.component';
+import { SignUpComponent } from './signUpPerson/signUp.component';
 
 @NgModule({
     imports: [
@@ -32,7 +33,8 @@ import { NgbdModalBasic } from './modal/modal.component';
         LoginComponent,
         NucleoiconsComponent,
         NotificationComponent,
-        NgbdModalBasic
+        NgbdModalBasic,
+        SignUpComponent
     ],
     exports:[ ComponentsComponent ]
 })

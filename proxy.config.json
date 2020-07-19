@@ -3,5 +3,12 @@
     "target":"http://localhost:8080/",
     "secure":false,
     "logLevel":"debug"
+  },
+
+  "/log/*":{
+    "target":"http://localhost:8081/",
+    "secure":false,
+    "logLevel":"debug"
   }
+
 }

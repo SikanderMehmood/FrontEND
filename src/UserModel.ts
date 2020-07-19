@@ -1,6 +1,4 @@
 
-
-
 export class Student {
     constructor(
       name:string,

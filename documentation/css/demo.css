@@ -647,7 +647,7 @@
 .presentation-page .n-logo,
 .index-page .n-logo {
     max-width: 100px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .presentation-page .page-header-city,
