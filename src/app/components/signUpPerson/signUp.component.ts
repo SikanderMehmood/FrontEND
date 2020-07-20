@@ -8,13 +8,17 @@ import { SignUpserviceService } from 'app/services/signUpservice.service';
   styleUrls: ['./signUp.component.css']
 })
 export class SignUpComponent implements OnInit {
+  fullname:string="Sikander";
+  email:string="some@gmail.com";
+  fscMarks:number =100;
+  password:string ="05i15eba";
+  collegeName:string="Punjab College";
+  uniName:string="Islamia University";
+  preMedical:boolean = true;
+  preengineering:boolean = true;
+  unilist:Array<string>=["Item-1","Item-2","Item-3"];
 
-  newSignUpInfo: SignUpModel = { name: 'Sikander', email:'siku@gmail.com', password: '05i15eba',collegeName: 'Punjab',uniName: 'Islamia',preMedical:true,preengineering:true,fscMarks:100};
-
-
-  constructor(private service:SignUpserviceService) {
-    var pass="05i15eba";
-   }
+  constructor(private service:SignUpserviceService) {}
 
   ngOnInit() {
     var body = document.getElementsByTagName('body')[0];
@@ -23,8 +27,24 @@ export class SignUpComponent implements OnInit {
     var navbar = document.getElementsByTagName('nav')[0];
     navbar.classList.add('navbar-transparent');
 }
+
 public savenewSignUp(){
-  let res = this.service.saveNewSignUp(this.newSignUpInfo);
+  let signUpObject = new SignUpModel();
+  signUpObject.name=this.fullname;
+  signUpObject.email=this.email;
+  signUpObject.fscMarks=this.fscMarks;
+  signUpObject.password=this.password;
+  signUpObject.collegeName=this.collegeName;
+  signUpObject.uniName=this.uniName;
+  signUpObject.preMedical=this.preMedical;
+  signUpObject.preengineering=this.preengineering;
+  signUpObject.uniList=this.unilist;
+  let res = this.service.saveNewSignUp(signUpObject);
+}
+
+public addToUniList(){
+
+
 }
 
 ngOnDestroy(){
