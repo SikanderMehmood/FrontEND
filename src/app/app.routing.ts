@@ -9,7 +9,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { SignUpComponent }  from './components/signUpPerson/signUp.component';
-
+import { NewpostComponent }  from './components/newpost/newpost.component';
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: 'index',                component: ComponentsComponent },
@@ -17,6 +17,7 @@ const routes: Routes =[
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'components/login',       component: LoginComponent },
     { path: 'components/signUpPerson',component: SignUpComponent },
+    { path: 'components/newpost',component: NewpostComponent },
     { path: 'examples/profile',     component: ProfileComponent },
 ];
 
