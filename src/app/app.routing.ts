@@ -10,12 +10,15 @@ import { ProfileComponent } from './examples/profile/profile.component';
 import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { SignUpComponent }  from './components/signUpPerson/signUp.component';
 import { NewpostComponent }  from './components/newpost/newpost.component';
+import { PersonProfileComponent }  from './components/personProfile/personProfile.component';
+
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: 'index',                component: ComponentsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'components/login',       component: LoginComponent },
+    { path: 'components/personProfile', component: PersonProfileComponent },
     { path: 'components/signUpPerson',component: SignUpComponent },
     { path: 'components/newpost',component: NewpostComponent },
     { path: 'examples/profile',     component: ProfileComponent },
