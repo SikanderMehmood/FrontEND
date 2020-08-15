@@ -17,6 +17,8 @@ import { NgbdModalBasic } from './modal/modal.component';
 import { SignUpComponent } from './signUpPerson/signUp.component';
 import { NewpostComponent } from './newpost/newpost.component';
 import { PersonProfileComponent } from './personProfile/personProfile.component';
+import { UniversityscrapComponent } from './universityscrap/universityscrap.component';
+import { UnilinksComponent } from './unilinks/unilinks.component';
 
 @NgModule({
     imports: [
@@ -38,7 +40,10 @@ import { PersonProfileComponent } from './personProfile/personProfile.component'
         NgbdModalBasic,
         SignUpComponent,
         NewpostComponent,
-        PersonProfileComponent
+        PersonProfileComponent,
+        UniversityscrapComponent,
+        UnilinksComponent,
+        UnilinksComponent
     ],
     exports:[ ComponentsComponent ]
 })

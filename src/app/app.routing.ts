@@ -11,6 +11,8 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 import { SignUpComponent }  from './components/signUpPerson/signUp.component';
 import { NewpostComponent }  from './components/newpost/newpost.component';
 import { PersonProfileComponent }  from './components/personProfile/personProfile.component';
+import { UniversityscrapComponent } from './components/universityscrap/universityscrap.component';
+import { UnilinksComponent} from './components/unilinks/unilinks.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
@@ -18,7 +20,9 @@ const routes: Routes =[
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'components/login',       component: LoginComponent },
+    { path: 'components/unilinks',       component: UnilinksComponent },
     { path: 'components/personProfile', component: PersonProfileComponent },
+    { path: 'components/universityscrap', component: UniversityscrapComponent },
     { path: 'components/signUpPerson',component: SignUpComponent },
     { path: 'components/newpost',component: NewpostComponent },
     { path: 'examples/profile',     component: ProfileComponent },
