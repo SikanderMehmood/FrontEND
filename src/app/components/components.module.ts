@@ -19,6 +19,7 @@ import { NewpostComponent } from './newpost/newpost.component';
 import { PersonProfileComponent } from './personProfile/personProfile.component';
 import { UniversityscrapComponent } from './universityscrap/universityscrap.component';
 import { UnilinksComponent } from './unilinks/unilinks.component';
+import { SingleunilinksComponent } from './singleunilinks/singleunilinks.component';
 
 @NgModule({
     imports: [
@@ -43,7 +44,8 @@ import { UnilinksComponent } from './unilinks/unilinks.component';
         PersonProfileComponent,
         UniversityscrapComponent,
         UnilinksComponent,
-        UnilinksComponent
+        UnilinksComponent,
+        SingleunilinksComponent
     ],
     exports:[ ComponentsComponent ]
 })

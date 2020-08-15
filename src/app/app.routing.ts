@@ -13,14 +13,14 @@ import { NewpostComponent }  from './components/newpost/newpost.component';
 import { PersonProfileComponent }  from './components/personProfile/personProfile.component';
 import { UniversityscrapComponent } from './components/universityscrap/universityscrap.component';
 import { UnilinksComponent} from './components/unilinks/unilinks.component';
-
+import {SingleunilinksComponent} from './components/singleunilinks/singleunilinks.component';
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
     { path: 'index',                component: ComponentsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'components/login',       component: LoginComponent },
-    { path: 'components/unilinks',       component: UnilinksComponent },
+    { path: 'components/unilinks/:id',component: UnilinksComponent },
     { path: 'components/personProfile', component: PersonProfileComponent },
     { path: 'components/universityscrap', component: UniversityscrapComponent },
     { path: 'components/signUpPerson',component: SignUpComponent },
