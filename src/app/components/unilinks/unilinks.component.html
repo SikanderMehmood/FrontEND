@@ -1,1 +1,98 @@
-<p>unilinks works!</p>
+
+<div class="page-header" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+    <div class="container">
+        
+        <div class="col-md-4 col-sm-4 content-center" style="margin-left: 100px;">
+            <a  *ngFor="let uni of babylinks" class= "list-group-item list-group-item-action" style="color: black;">
+                
+                <i class="fa fa-book"></i>&nbsp; {{uni.linkUrl}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                - >  {{uni.linkText}}
+               
+                </a>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4" style="padding:10px;opacity:0.5;">
+            <div class="col-sm-6 col-lg-3" style="margin-top:100px;">
+            <p class="category" style="font-size:25px;">Select your Favourite Universities</p>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">
+                    <span class="form-check-sign"></span>
+                    Giki
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" [(ngModel)]="value" type="checkbox">
+                    <span class="form-check-sign"></span>
+                    NUST
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">
+                    <span class="form-check-sign"></span>
+                    UET
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">
+                    <span class="form-check-sign"></span>
+                    ISLAMIA
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">
+                    <span class="form-check-sign"></span>
+                    COMSATS
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox">
+                    <span class="form-check-sign"></span>
+                    FAST
+                </label>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://www.creative-tim.com">
+                            Creative Tim
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.creative-tim.com/about-us">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.creative-tim.com">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md">
+                            MIT License
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                &copy;
+              {{data | date: 'yyyy'}}, Designed by
+                <a href="https://www.invisionapp.com" target="_blank">Invision</a>. Coded by
+                <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a>.
+            </div>
+        </div>
+    </footer>
+</div>

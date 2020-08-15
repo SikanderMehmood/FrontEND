@@ -1,6 +1,11 @@
-export class Babylinks{
-id:String;
-linkurl:String;
-linktext:String;
-baseurl:String;
+
+export class Babylinks
+{
+    id:String;
+    linkUrl:String;
+    linkText:String;
+    baseurl:String;
+
+ constructor(){}
+
 }
