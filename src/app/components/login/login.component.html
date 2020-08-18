@@ -15,13 +15,13 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
                         </div>
-                          <input type="text" class="form-control" [(ngModel)]="newStudent.email" placeholder="Email..." (focus)="focus=true" (blur)="focus=false" name="first" >
+                          <input type="text" class="form-control" [(ngModel)]="newStudent.email" placeholder="Email..." (focus)="focus=true" value="some@gmail.com" (blur)="focus=false" name="first" >
                       </div>
                       <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus1===true}">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
                         </div>
-                          <input type="text" [(ngModel)]="newStudent.password" placeholder="Password" class="form-control" (focus)="focus1=true" (blur)="focus1=false" name="password"/>
+                          <input type="password" [(ngModel)]="newStudent.password" placeholder="Password" class="form-control" (focus)="focus1=true" value="05i15eba" (blur)="focus1=false" name="password"/>
                       </div>
                     </div>
                     <div class="footer text-center">

@@ -10,7 +10,7 @@ import {loginServiceModel} from '../../../loginService';
 })
 export class LoginComponent implements OnInit {
 
-    newStudent: Student = new Student("Sikander","sik@gmail.com","o5i15eba");
+    newStudent: Student = new Student("sik@gmail.com","o5i15eba");
 
     data : Date = new Date();
     focus;
