@@ -28,18 +28,6 @@ export class LoginComponent implements OnInit {
         navbar.classList.add('navbar-transparent');
     }
 
-    // check(): void {
-    //     let url ="/api/new";
-    //     this.http.post(url,this.model).subscribe(
-    //         res=> {
-    //             location.reload();
-    //         },
-    //         error1 => {
-    //             alert("Some Error occoured");
-    //         }
-    //     )
-    // }
-
     public saveNewStudent(){
         let res = this.service.saveMyNewStudent(this.newStudent);
     }

@@ -20,6 +20,7 @@ import { PersonProfileComponent } from './personProfile/personProfile.component'
 import { UniversityscrapComponent } from './universityscrap/universityscrap.component';
 import { UnilinksComponent } from './unilinks/unilinks.component';
 import { SingleunilinksComponent } from './singleunilinks/singleunilinks.component';
+import { SaveUniversityComponent } from './saveUniversity/saveUniversity.component';
 
 @NgModule({
     imports: [
@@ -45,7 +46,8 @@ import { SingleunilinksComponent } from './singleunilinks/singleunilinks.compone
         UniversityscrapComponent,
         UnilinksComponent,
         UnilinksComponent,
-        SingleunilinksComponent
+        SingleunilinksComponent,
+        SaveUniversityComponent
     ],
     exports:[ ComponentsComponent ]
 })

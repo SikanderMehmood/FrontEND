@@ -1,0 +1,65 @@
+
+<div class="page-header" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(assets/img/login.jpg)"></div>
+    <div class="container">
+        <div class="col-md-4 content-center">
+            <div class="card card-login card-plain">
+                <form class="form" method="" action="" ngm (submit)="saveNewUni()">
+                    <div class="header header-primary text-center">
+                        <div class="logo-container">
+                            <h1>Save New University</h1>
+                        </div>
+                    </div>
+                    <div class="content">
+                      <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus===true}">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">  <i class="now-ui-icons users_circle-08"></i></span>
+                        </div>
+                          <input type="text" class="form-control" [(ngModel)]="name" placeholder="University Name" (focus)="focus=true" value="some@gmail.com" (blur)="focus=false" name="first" >
+                      </div>
+                      <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                        </div>
+                          <input type="text" [(ngModel)]="url" placeholder="url" class="form-control" (focus)="focus1=true" (blur)="focus1=false" name="url"/>
+                      </div>
+                      <div class="input-group form-group-no-border input-lg" [ngClass]="{'input-group-focus':focus1===true}">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="now-ui-icons text_caps-small"></i></span>
+                        </div>
+                          <input type="text" [(ngModel)]="location" placeholder="Location" class="form-control" (focus)="focus1=true" (blur)="focus1=false" name="location"/>
+                      </div>
+                    </div>
+                    <div class="footer text-center">
+                        <button class="btn btn-primary btn-round btn-lg btn-block">Get Started</button>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="https://github.com/SikanderMehmood">
+                            Sikander Mehmood
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SikanderMehmood">
+                            About
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="iub.edu.pk">
+                            IUB
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</div>
